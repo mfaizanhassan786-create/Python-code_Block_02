@@ -115,3 +115,26 @@ symmetric_diff = set_a.symmetric_difference(set_b)
 print("Symmetric Difference (elements in A or B, but not both):", symmetric_diff)
 print()
 
+
+# Example 7: Converting List to Set and Set Operations
+print("=" * 50)
+print("Example 7: Converting List to Set and Set Operations")
+print("=" * 50)
+
+# Convert list to set (removes duplicates)
+my_list = [1, 2, 2, 3, 3, 3, 4, 5]
+print("Original list:", my_list)
+
+my_set = set(my_list)
+print("Converted to set:", my_set)
+
+# Convert set back to list
+new_list = list(my_set)
+print("Converted back to list:", new_list)
+
+# Using pop() to remove and return a random element
+print(f"\nBefore pop: {my_set}")
+popped_element = my_set.pop()
+print(f"Popped element: {popped_element}")
+print(f"After pop: {my_set}")
+
