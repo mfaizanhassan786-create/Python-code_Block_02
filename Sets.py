@@ -95,4 +95,23 @@ print()
 
 
 
+# Example 6: Set Methods - Difference and Symmetric Difference
+print("=" * 50)
+print("Example 6: Set Methods - Difference and Symmetric Difference")
+print("=" * 50)
+
+set_a = {1, 2, 3, 4, 5}
+set_b = {4, 5, 6, 7, 8}
+
+print("Set A:", set_a)
+print("Set B:", set_b)
+
+# Difference: elements in A but not in B
+difference = set_a.difference(set_b)
+print("Difference (A - B):", difference)
+
+# Symmetric Difference: elements in either set, but not in both
+symmetric_diff = set_a.symmetric_difference(set_b)
+print("Symmetric Difference (elements in A or B, but not both):", symmetric_diff)
+print()
 

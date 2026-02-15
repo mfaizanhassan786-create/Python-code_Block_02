@@ -1,6 +1,6 @@
-# ============================================
+
 # 7 EASY EXAMPLES ON DICTIONARIES IN PYTHON
-# ============================================
+
 
 # Example 1: Creating a Simple Dictionary
 print("=" * 50)
