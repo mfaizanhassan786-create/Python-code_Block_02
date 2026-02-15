@@ -94,4 +94,24 @@ for key, value in colors.items():
 print()
 
 
+# Example 6: Dictionary with Different Data Types
+print("=" * 50)
+print("Example 6: Dictionary with Different Data Types")
+print("=" * 50)
+
+mixed_data = {
+    "name": "Ali",           # String
+    "age": 30,               # Integer
+    "height": 5.9,           # Float
+    "is_student": True,      # Boolean
+    "subjects": ["Math", "Science", "English"],  # List
+    "grades": {"Math": 85, "Science": 90}       # Nested Dictionary
+}
+
+print("Name:", mixed_data["name"])
+print("Age:", mixed_data["age"])
+print("Subjects:", mixed_data["subjects"])
+print("Math Grade:", mixed_data["grades"]["Math"])
+print()
+
 
