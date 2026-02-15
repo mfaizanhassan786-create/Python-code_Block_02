@@ -115,3 +115,25 @@ print("Math Grade:", mixed_data["grades"]["Math"])
 print()
 
 
+
+# Example 7: Checking if Key Exists and Dictionary Length
+print("=" * 50)
+print("Example 7: Checking if Key Exists and Dictionary Length")
+print("=" * 50)
+
+phonebook = {
+    "Ahmed": "0300-1234567",
+    "Sara": "0301-2345678",
+    "Hassan": "0302-3456789"
+}
+
+# Check if key exists
+if "Ahmed" in phonebook:
+    print("Ahmed's number:", phonebook["Ahmed"])
+
+if "Ali" not in phonebook:
+    print("Ali is not in the phonebook")
+
+# Get dictionary length
+print(f"\nTotal contacts: {len(phonebook)}")
+print("All contacts:", list(phonebook.keys()))
