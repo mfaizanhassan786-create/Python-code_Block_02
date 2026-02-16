@@ -41,3 +41,10 @@ for num in range(1, 11):
     if num % 3 == 0:
         continue
     print(num)
+
+# Example 8: Sum numbers in a loop
+total = 0
+for n in [10, 20, 30, 40]:
+    total += n
+print(total)
+
