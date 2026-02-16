@@ -48,3 +48,6 @@ for n in [10, 20, 30, 40]:
     total += n
 print(total)
 
+# Example 9: Loop backwards
+for i in range(5, 0, -1):
+    print(i)
