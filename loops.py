@@ -31,3 +31,13 @@ text = "hello"
 for char in text:
     print(char.upper())
 
+# Example 6: Loop through string
+text = "hello"
+for char in text:
+    print(char.upper())
+
+# Example 7: Loop with continue
+for num in range(1, 11):
+    if num % 3 == 0:
+        continue
+    print(num)
