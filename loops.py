@@ -51,3 +51,9 @@ print(total)
 # Example 9: Loop backwards
 for i in range(5, 0, -1):
     print(i)
+
+# Example 10: Loop through a dictionary
+my_dict = {"apple": 1, "banana": 2, "cherry": 3}
+for key, value in my_dict.items():
+    print(f"{key}: {value}")
+    
