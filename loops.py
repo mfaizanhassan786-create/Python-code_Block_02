@@ -19,3 +19,10 @@ for i in range(3):
     for j in range(2):
         print(f"i={i}, j={j}")
 
+
+# Example 5: Loop with break
+for x in range(1, 20):
+    if x > 10:
+        break
+    print(x)
+
