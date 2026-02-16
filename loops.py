@@ -26,3 +26,8 @@ for x in range(1, 20):
         break
     print(x)
 
+# Example 6: Loop through string
+text = "hello"
+for char in text:
+    print(char.upper())
+
