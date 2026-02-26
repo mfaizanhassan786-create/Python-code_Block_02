@@ -64,4 +64,5 @@
 list = {"20", "30", "40", "50"}
 for key, value in list:
     print(list)
+    
 print("All is Done.")
