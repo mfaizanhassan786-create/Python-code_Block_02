@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Cricket AI News</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="brand">
+          <div class="logo-circle">🏏</div>
+          <div>
+            <h1>Cricket AI News</h1>
+            <p>Smart summaries of the latest cricket stories</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="app-main">
+        <section class="search-card">
+          <h2>Search cricket news</h2>
+          <p class="subtitle">
+            Type a team, player, league, or country. We’ll fetch the latest
+            headlines and summarize them using AI.
+          </p>
+
+          <form id="search-form">
+            <div class="field-row">
+              <div class="field">
+                <label for="query">Topic</label>
+                <input
+                  id="query"
+                  name="query"
+                  type="text"
+                  placeholder="e.g. India, Babar Azam, IPL, Ashes"
+                />
+              </div>
+              <div class="field">
+                <label for="page-size">Number of articles</label>
+                <select id="page-size" name="pageSize">
+                  <option value="5">5</option>
+                  <option value="10" selected>10</option>
+                  <option value="20">20</option>
+                </select>
+              </div>
+              <div class="field field-button">
+                <button type="submit" id="search-button">
+                  <span id="search-button-text">Get AI summary</span>
+                  <span class="spinner" id="search-spinner" hidden></span>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <p id="status" class="status"></p>
+        </section>
+
+        <section class="results-grid">
+          <article class="summary-card">
+            <h2>AI summary</h2>
+            <div id="summary" class="summary-content">
+              <p class="placeholder">
+                No search yet. Try “IPL” or your favourite team to see
+                AI-powered summaries of the latest cricket news.
+              </p>
+            </div>
+          </article>
+
+          <article class="articles-card">
+            <h2>Top articles</h2>
+            <div id="articles" class="articles-list"></div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <p>
+          Built with FastAPI + a simple frontend. Configure your own
+          <span class="pill">NEWS_API_KEY</span> and
+          <span class="pill">OPENAI_API_KEY</span> on the server.
+        </p>
+      </footer>
+    </div>
+
+    <script src="/static/main.js"></script>
+  </body>
+  </html>
+
